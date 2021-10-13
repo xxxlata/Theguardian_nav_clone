@@ -26,14 +26,15 @@ ul,li{
 
 .banner_background{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     background-color: #052962;   
     width: 100%;
     height: 14rem;
 }
-
-
+.banner_left{
+    padding: 0 5% ;
+}
 .banner_support{
     color: #FFE500;
     font-weight: bold;
@@ -52,8 +53,8 @@ ul,li{
 .banner_a {
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
-    margin-left: 20px;
+    padding: 5%;
+    
 }
 
 .first_a {
@@ -61,13 +62,13 @@ ul,li{
     border-radius: 50px;
     height: 30px;
     width: 120px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .first_a > a {
     font-size: 15px;
     font-weight: bold;
-    margin: 3px 10px 0 5px;
+    margin: 8px;
 }
 
 .sec_a {
@@ -75,21 +76,36 @@ ul,li{
     border-radius: 50px;
     height: 30px;
     width: 120px;
-    margin-right: 5px;
 }
 
 .sec_a > a {
     font-size: 15px;
     font-weight: bold;
-    margin: 3px 10px 0 5px;
+    margin: 8px;
 }
 
-.top a {
-    margin-right: 10px;
+.banner_right{
+    margin-right:6%;
+    padding: 0 12%;
+    position: relative;
 }
 
-.top i{
+.banner_right_a {
+    padding: 10px;
+    position: absolute;
+    left: -1rem;
+}
+
+.banner_right_a a {
+    margin-left: 5px; 
+}
+
+.banner_right_a i {
     color: white;
+}
+
+.banner_right_a :first-child{
+    border-left: 0.5px solid white;
 }
 
 svg {
@@ -98,24 +114,33 @@ svg {
 }
 
 button {
-    background-color: salmon;
+    position: absolute;
+    right: 3rem;
     border: none;
+    background-color: #052962;
     font-size: 16px;
-    width: 11rem;
-    height: 1.5rem;
 }
 
 .menu {
-    width: 90%;   
-    height: 2rem ;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr  1fr 1fr 3fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 5%; 
     border: 1px solid white;
 }
-.menu a {
-    padding-left: 10px;
-    font-size: 1.5rem;
-    color: white;
-    border: 0.01rem solid white;
+.menu li {
+    border: 0.5px solid white;
 
 }
+
+.menu :last-child {
+    border: none;
+}
+.menu li a{
+    padding-right: 7rem;
+    color: white;
+    font-size: 22px;
+}
+
+
