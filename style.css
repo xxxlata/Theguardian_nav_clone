@@ -143,4 +143,197 @@ button {
     font-size: 22px;
 }
 
+@media screen and (max-width: 1200px) {
+    .white_wall {
+        height: 10rem;
+    }
+    
+    .banner_background{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: #052962;   
+        width: 100%;
+        height: 13rem;
+    }
 
+    .banner_support{
+        font-size: 30px;
+    }
+    
+    .banner_avilable{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    
+    .banner_a {
+        padding: 3%;
+    }
+    .first_a {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        width: 100px;
+        margin-right: 8px;
+    }
+    
+    .first_a > a {
+        font-size: 10px;
+    }
+    
+    .sec_a {
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        height: 20px;
+        width: 100px;
+    }
+    
+    .sec_a > a {
+        font-size: 10px;
+    }
+
+    .banner_right{
+        margin-right:6%;
+        padding: 0 8%;
+        position: relative;
+    }
+
+    .banner_right_a {
+        padding: 5px;
+        position: absolute;
+        left: -8rem;
+        font-size: 14px;
+    }
+
+    svg {
+        height: 9rem;
+        width: 15rem;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 80%;
+        margin: 0 6%; 
+        border: 1px solid white;
+    }
+    .menu li {
+        border: 0.5px solid white;
+
+    }
+
+    .menu :last-child {
+        border: none;
+    }
+    .menu li a{
+        padding:1rem 4rem 0 1rem;
+        color: white;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .white_wall {
+        height: 8rem;
+    }
+    .white_wall img{
+        height: auto;
+        width: 80%;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 80%;
+        margin: 0 5%; 
+        border: 0.5px solid white;
+    }
+    .menu li {
+        border: 0.3px solid white;
+    
+    }
+
+    .none a{
+        display: none;
+    }
+    .none {
+        background-color: #FFE500;
+        border-radius: 100px;
+        width: 3rem;
+        height: auto;
+    }
+    .none i {
+        color: black; 
+    }
+
+    .menu li a{
+        padding-right: 3rem;
+        color: white;
+        font-size: 20px;
+    }
+    .border_none{
+        border: none;
+    }
+    .banner_right button {
+        display: none;
+    }
+    .banner_right_a :first-child {
+        display: none;
+    }
+   
+    .banner_right_a :last-child {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1035px) {
+    
+    .none i {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 920px) {
+    .banner_avilable {
+        display: none;
+    }
+
+    .banner_support {
+        display: none;
+    }
+    .first_a {
+        display: none;
+    }
+    
+    .white_wall {
+        display: none;
+    }
+
+    .banner_right svg {
+        height: 2rem;
+        width: 3rem;
+    }
+    
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin: none; 
+        border: 0.5px solid white;
+    }
+    
+    .menu li a{
+        padding-right: 0.5rem;
+        color: white;
+        font-size: 10px;
+    }
+
+}
